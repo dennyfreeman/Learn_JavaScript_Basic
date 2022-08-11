@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+
+    var currentIndex = 5
+    // 自己自增和自减是没有区别的
+    // ++currentIndex
+    // console.log(currentIndex)
+    // --currentIndex
+    // console.log(currentIndex)
+
+    // 自增和自减表达式用在其他表达式中，那就有区别了
+    // var result1 = 100 + currentIndex++
+    // console.log(currentIndex) //6
+    // console.log(result1) //105
+
+    var result2 = 100 + currentIndex++
+    console.log(currentIndex) //6
+    console.log(result2) //106
+  </script>
+</body>
+</html>

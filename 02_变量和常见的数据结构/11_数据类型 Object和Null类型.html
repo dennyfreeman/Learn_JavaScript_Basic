@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    // Object类型的使用
+    // var name = "why"
+    // var age = 18
+    // var height = 1.88
+
+    var person = {
+      name: "why",
+      age: 18,
+      height: 1.88
+    }
+
+    console.log(person)
+
+    // 2、对象类型中某一个属性
+    console.log(person.name)
+
+    var message = "Hello World"
+    console.log(message.length) //包装成一个独享 String（原生类型的包装类）
+
+    // 3、Null类型
+    // 3.1. 其他类型的初始化
+    var age = 0 
+    var num = 0
+    var message = "" //空字符串
+    var isAdmin = false
+
+    // age/message/isAdmin --> false
+    // if (age) {
+    //   console.log("分支语句不会执行")
+    // }
+
+    // 当对弈个对象类型进行初始化时，不建议初始化为{}，建议初始化Null
+    // 3.2. 初始化为()，转成Boolean类型，是为true
+    //  var book = {} //true
+    // if (book) { 
+    //   console.log("book的逻辑代码执行")
+    // }
+
+    // Null存在的意义是就是对对象进行初始化
+    var book = null
+    console.log(typeof book) //object
+
+    var obj = null
+    obj = {
+      name: "why",
+      age: 188
+    }
+   
+  </script>
+  
+</body>
+</html>

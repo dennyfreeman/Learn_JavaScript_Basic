@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    // 1、string基本使用
+    var name = "coderwhy"
+    var address = "广州市"
+    var intro = "认真是一种可怕的力量" 
+
+    // 2、别的引号使用
+    // 单引号
+    var message1 = 'Hello World'
+    // 双引号
+    var message2 = "Hello World"
+    // 反引号(ES6新增的语法)(能支持变量传递)
+    var message3 = `Hello World，${name}, ${2 + 3}`
+
+    console.log(message3)
+
+    // 字符串本身中包含引号
+    var message4 = "my name is 'coderwhy'"
+    console.log(message4)
+
+    // 3、转义字符：字符串本身中包含引号
+    var message5 = 'my name \'\' is "coderwhy"'
+    console.log(message5)
+
+    // 4、字符串本身有的方法和属性
+    var message = "Hello World"
+    console.log(message.length)
+
+    // 字符串的操作
+    var nickname = "coderwhy"
+    var info = "my name is"
+    var infoStr = `my name is ${nickname}` //推荐
+    var infoStr2 = info + nickname
+    console.log(infoStr, infoStr2)
+  </script>
+</body>
+</html>

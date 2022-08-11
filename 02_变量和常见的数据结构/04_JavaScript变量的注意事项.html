@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 注意事项一：如果一个变量未声明就直接使用，那么会直接报错
+    // console.log(age)
+
+    // 注意事项二：如果一个变量有声明，但是没有赋值操作
+    var inputInfo
+    console.log(inputInfo)
+
+    // 注意事项三：在JavaScript中也可以不适用var在全局声明变量
+    // 但是不推荐！
+    // 如果不适用var来声明变量。也是可以的，并且这个变量会被加到window对象里面
+    address = "广州市"
+    console.log(address)
+    console.log(window)
+
+  </script>
+</body>
+</html>
