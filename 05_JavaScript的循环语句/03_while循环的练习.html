@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    // 1、练习一：打印10次Hello World
+    // var count = 0
+    // while (count < 10) {
+    //   console.log("Hello World: ", count)
+    //   count++
+    // }
+
+    // 2、练习二：打印0~99数字
+    // var i = 0
+    // while (i < 100) {
+    //   console.log(i)
+    //   i++
+    // }
+
+    // 3、练习三：计算0~99的数字和
+    // var x = 0
+    // var totalCount = 0
+    // while (x < 100) {
+    //   console.log(x)
+    //   totalCount += x
+    //   x++
+    // }
+    // console.log("totalCount: ", totalCount)
+
+    // 4、练习四：计算0~99的奇数和
+    // 如何判断一个数字是奇数还是偶数
+    var num = 121
+    if (num % 2 !== 0) { //偶数
+      console.log("num是一个奇数")
+    }
+
+    var count = 0
+    var totalCount = 0
+    while (count < 100) {
+      if (count % 2 !== 0) {
+        console.log("是一个奇数:", count)
+        totalCount += count
+      }
+      count++
+    }
+    console.log("所有的奇数和：", totalCount)
+
+    // 算法优化
+    var count = 0
+    var totalCount = 0
+    while (count < 100) {
+      totalCount += count
+      count += 2
+    }
+    console.log("所有的偶数和：", totalCount)
+
+  </script>
+  
+</body>
+</html>

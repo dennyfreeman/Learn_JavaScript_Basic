@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+
+    // 语法
+    // switch (表达式/变量) {
+    //   case 变量1:
+    //     // 语句
+    // }
+
+    // 案例1： 
+    // 上一首按钮：0
+    // 播放/暂停的按钮：1
+    // 下一首的按钮：2
+    var btnIndex = 1
+
+    switch (btnIndex) {
+      case 0:
+        console.log("点击了上一首")
+        break
+      case 1:
+        console.log("点击了播放/暂停")
+        // 默认情况下是有case穿透
+        // 使用break阻止穿透
+        break
+      case 2:
+        console.log("点击了下一首")
+        break
+      default:
+        console.log("当前按钮的索引有问题")
+    }
+
+    
+
+  </script>
+</body>
+</html>
