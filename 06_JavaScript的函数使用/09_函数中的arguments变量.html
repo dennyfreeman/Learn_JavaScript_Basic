@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    // 1、基本使用
+    function foo(name, age) {
+      console.log("传入的name:", name, age)
+
+      // 在函数中都存在一个变量，即arguments
+      console.log(arguments) //是一个对象
+      console.log(typeof arguments) //对象内部包含了所有传入的参数
+
+      for (var i = 0; i < arguments.length; i++) {
+        console.log(arguments[i])
+      }
+    }
+
+    foo("why", 18)
+
+    // 2、argunments的案例
+    function sum() {
+      var total = 0
+      for (var i = 0; i < arguments.length; i++) {
+        var num = arguments[i]
+        total += num
+      }
+      return total
+    }
+
+    console.log(sum(10, 20))
+    console.log(sum(10, 20, 30))
+    console.log(sum(10, 20, 30, 40))
+
+  </script>
+  
+</body>
+</html>

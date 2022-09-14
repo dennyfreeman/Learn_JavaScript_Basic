@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    // 1、函数回调的概念理解
+    // 非常重要的做法
+    function foo(fn) {
+      fn() //执行传入的函数 -->传入了bar
+    }
+
+    function bar() {
+      console.log("bar函数被执行了~")
+    }
+
+    foo(bar)
+
+
+    // 2、函数回调的案例
+    // function request(url, callback) {
+    //   console.log("根据URL向服务器发送网络请求")
+    //   console.log("需要花费比加长的时间拿到对应的结果")
+
+    //   var list = ["javascript", "javascript学习", "javaScript高级编程"]
+
+    //   callback(list) //这个函数指向就是handleResult
+    // }
+
+    // function handleResult(res) {
+    //   console.log("在handleResult中拿到结果：", res)
+    // }
+
+    // request("http://www.baidu.com", handleResult)
+
+    // 3、函数回调的案例重构
+    function request(url, callback) {
+      console.log("根据URL向服务器发送网络请求")
+      console.log("需要花费比加长的时间拿到对应的结果")
+
+      var list = ["javascript", "javascript学习", "javaScript高级编程"]
+
+      callback(list) //这个函数指向就是handleResult
+    }
+
+    // 传入的函数时没有名字，匿名函数
+    request("http://www.baidu.com", function(res) {
+      console.log("在handleResult中拿到结果：", res)
+    })
+
+  </script>
+  
+</body>
+</html>
