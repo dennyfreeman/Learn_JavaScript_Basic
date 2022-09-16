@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    var info = {
+      name: "why",
+      age: 18,
+      height: 1.88
+    }
+
+    // 可以查看对象里所有的keys
+    // console.log(Object.keys(info))
+
+    // 对对象进行遍历
+    // 普通For循环
+    var infoKeys = Object.keys(info)
+    for (var i = 0; i < infoKeys.length; i++) {
+      var key = infoKeys[i]
+      var value = info[key]
+      console.log(`key: ${key}, value: ${value}`)
+    }
+
+    // for.. in..：遍历对象
+    for (var key in info) {
+      var value = info[key]
+      console.log(`key: ${key}, value: ${value}`)
+    }
+
+    // for.. of..: 默认是不能遍历对象
+    // for (var foo of info) {
+
+    // }
+  </script>
+  
+</body>
+</html>
