@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    var message = "my name is why"
+    var name = "kobe"
+
+    // 判断一个字符串中是否有另外一个字符串
+    // 1、indexOf(searchString, fromIndex)
+    /*
+      index: 
+        情况一：搜索到，搜索字符串索引所在的位置
+        情况二：没有搜索到，返回-1
+    */
+
+    var index = message.indexOf(name)
+    console.log(index)
+
+    if (message.indexOf(name) !== -1) {
+      console.log("message中包含name")
+    } else {
+      console.log("message中不包含name")
+    }
+
+  </script>
+  
+</body>
+</html>
