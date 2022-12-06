@@ -28,11 +28,14 @@
     }
 
     // 3、复制box
+    var counter = 0
     cloneBtnEl.onclick = function() {
-      var newNode = boxEl.cloneNode()
-      console.log(newNode)
+      var newNode = boxEl.cloneNode(true)
+      newNode.children[0].textContent = "我也是标题" + counter
+      document.body.append(newNode)
+      // boxEl.after(newNode)
+      counter++
     }
-
 
 
   </script>
