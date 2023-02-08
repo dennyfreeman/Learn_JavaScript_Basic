@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 100px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      border: 10px solid red;
+      background-color: orange;
+      box-sizing: border-box;
+      overflow:scroll;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    哈哈哈哈哈的的第三方士大夫sdafsdafsdfdsfdsf撒多层次
+  </div>
+  
+  <script>
+  
+    var boxEl = document.querySelector(".box")
+
+    // 1、获取样式（局限性很强）
+    // var boxStyle = getComputedStyle(boxEl)
+    // console.log(boxStyle.width, boxStyle.height)
+
+    // 2、获取更多信息
+    console.log(boxEl.clientWidth)
+    console.log(boxEl.clientHeight)
+    
+    console.log(boxEl.clientLeft)
+    console.log(boxEl.clientTop)
+
+    console.log(boxEl.offsetWidth)
+    console.log(boxEl.offsetHeight)
+
+    console.log(boxEl.offsetLeft, boxEl.offsetTop)
+
+    console.log(boxEl.scrollHeight)
+
+    // window对象
+    window.onclick = function() {
+      console.log(boxEl.scrollTop)
+    }
+  </script>
+</body>
+</html>
